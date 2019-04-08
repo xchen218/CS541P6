@@ -2,8 +2,8 @@
 //  MyDefines.h
 //  auto-jd
 //
-//  Created by lsx on 15/3/30.
-//  Copyright (c) 2015年 lsx. All rights reserved.
+//  Created by Xiang on 2019/4/5.
+//  Copyright © 2019年 xchen218. All rights reserved.
 //
 #import "AppDelegate.h"
 
@@ -11,17 +11,10 @@
 #define SCREEN_HEIGHT [[UIScreen mainScreen] bounds].size.height
 #define SCREEN_BOUNDS [[UIScreen mainScreen] bounds]
 
-#define WXApi_ID @"wxb91a01c1075596b6"
-#define MobClick_ID @"57e27b4167e58e504300012c"
-//App Store Url
-#define kAppStoreUrl @"https://itunes.apple.com/cn/app/id1158784553?l=zh&ls=1&mt=8"
-#define kAppStoreComendUrl @"itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?type=Purple+Software&id=1158784553"
 
 #define kInitKeyword @"SearchWordDefult"
-#define kFavorite @"favorite"
 
-
-#define appDelegate                     ((AppDelegate *)[[UIApplication sharedApplication] delegate])
+#define appDelegate  ((AppDelegate *)[[UIApplication sharedApplication] delegate])
 
 
 #define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
@@ -29,15 +22,11 @@
 #define UIColorFromRGBA(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF000000) >> 24))/255.0 green:((float)((rgbValue & 0xFF0000) >> 16))/255.0 blue:((float)((rgbValue & 0xFF00)>> 8))/255.0 alpha:((float)(rgbValue & 0xFF))/255.0]
 #define RGBA_COLOR(R, G, B, A) [UIColor colorWithRed:((R) / 255.0f) green:((G) / 255.0f) blue:((B) / 255.0f) alpha:A]
 
-//导航条颜色
 #define Nav_Color RGBA_COLOR(71.0,141.0,244.0,1)
-//通用 view背景色
 #define viewBGColor RGBA_COLOR(238,241,245,1)
 
-//按钮圆角
 #define  btnCornerRadius 5.0f
 
-//滑动视图 顶部高度
 #define MENU_HEIGHT 40
 
 #define GGBlueLight UIColorFromRGBA(0xffcfdced)
@@ -55,16 +44,9 @@
 #define IS_IPHONE_6 (IS_IPHONE && SCREEN_MAX_LENGTH == 667.0)
 #define IS_IPHONE_6P (IS_IPHONE && SCREEN_MAX_LENGTH == 736.0)
 #define IS_IOS10 ([[[UIDevice currentDevice]systemVersion]floatValue] >= 10.0)
-//系数
+
 #define timesOf320  (MAX(1, (SCREEN_WIDTH/320)*1))
 
-#ifdef DEBUG
-    #define preUrl @"http://gwm.car.jd.com/client"
-#else
-    #define preUrl @"http://gw.car.jd.com/client"
-#endif
-
-//当前操作是否在主线程，如果不是，则转到主线程
 #define GetMainQueue(condition)  \
 if (![[NSThread currentThread] isMainThread]) {    \
 dispatch_sync(dispatch_get_main_queue(), ^{    \
@@ -131,9 +113,7 @@ object_setIvar(*condition, ivar, (id)CFRunLoopGetCurrent() );\
 #define IS_CH_SYMBOL(chr) ((int)(chr)>127)  //判断一个字符是不是中文
 
 
-
 #define isNSNull(value) [value isKindOfClass:[NSNull class]]
-
 
 
 #define UrlForJPG(url) [url stringByReplacingOccurrencesOfString:@".gif" withString:@".jpg"]

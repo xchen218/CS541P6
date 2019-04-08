@@ -7,8 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseViewController.h"
 
-@interface FirstViewController : UIViewController
+@interface FirstViewController : BaseViewController{
+    NSMutableArray *_dataArr;
+    UICollectionView *_collectionView;
+    UITextField *_field;
+    
+}
 
 
 @end
