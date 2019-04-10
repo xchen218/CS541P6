@@ -21,6 +21,7 @@
 		F05D66ED2257FACC009ACD8A /* UIViewAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F05D66E82257FACC009ACD8A /* UIViewAdditions.m */; };
 		F05D66F2225BD790009ACD8A /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F05D66EE225BD78F009ACD8A /* BaseViewController.m */; };
 		F05D66F3225BD790009ACD8A /* GGNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F05D66F1225BD790009ACD8A /* GGNavigationBar.m */; };
+		F05D66F6225E3E51009ACD8A /* CollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F05D66F5225E3E51009ACD8A /* CollectionCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,8 @@
 		F05D66EF225BD790009ACD8A /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		F05D66F0225BD790009ACD8A /* GGNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGNavigationBar.h; sourceTree = "<group>"; };
 		F05D66F1225BD790009ACD8A /* GGNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGNavigationBar.m; sourceTree = "<group>"; };
+		F05D66F4225E3E51009ACD8A /* CollectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionCell.h; sourceTree = "<group>"; };
+		F05D66F5225E3E51009ACD8A /* CollectionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +113,8 @@
 				F05D66C42257F38B009ACD8A /* AppDelegate.m */,
 				F05D66C62257F38B009ACD8A /* FirstViewController.h */,
 				F05D66C72257F38B009ACD8A /* FirstViewController.m */,
+				F05D66F4225E3E51009ACD8A /* CollectionCell.h */,
+				F05D66F5225E3E51009ACD8A /* CollectionCell.m */,
 				F05D66C92257F38B009ACD8A /* SecondViewController.h */,
 				F05D66CA2257F38B009ACD8A /* SecondViewController.m */,
 				F05D66EF225BD790009ACD8A /* BaseViewController.h */,
@@ -260,6 +265,7 @@
 				F05D66C52257F38B009ACD8A /* AppDelegate.m in Sources */,
 				F05D66E92257FACC009ACD8A /* MBProgressHUD+string.m in Sources */,
 				F05D66D62257F38E009ACD8A /* main.m in Sources */,
+				F05D66F6225E3E51009ACD8A /* CollectionCell.m in Sources */,
 				F05D66EA2257FACC009ACD8A /* Reachability.m in Sources */,
 				F05D66C82257F38B009ACD8A /* FirstViewController.m in Sources */,
 				F05D66F3225BD790009ACD8A /* GGNavigationBar.m in Sources */,
