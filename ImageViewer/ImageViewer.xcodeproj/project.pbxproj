@@ -22,6 +22,7 @@
 		F05D66F2225BD790009ACD8A /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F05D66EE225BD78F009ACD8A /* BaseViewController.m */; };
 		F05D66F3225BD790009ACD8A /* GGNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F05D66F1225BD790009ACD8A /* GGNavigationBar.m */; };
 		F05D66F6225E3E51009ACD8A /* CollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F05D66F5225E3E51009ACD8A /* CollectionCell.m */; };
+		F05D66F922610320009ACD8A /* SerchSetingView.m in Sources */ = {isa = PBXBuildFile; fileRef = F05D66F822610320009ACD8A /* SerchSetingView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,8 @@
 		F05D66F1225BD790009ACD8A /* GGNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGNavigationBar.m; sourceTree = "<group>"; };
 		F05D66F4225E3E51009ACD8A /* CollectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionCell.h; sourceTree = "<group>"; };
 		F05D66F5225E3E51009ACD8A /* CollectionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionCell.m; sourceTree = "<group>"; };
+		F05D66F72261031F009ACD8A /* SerchSetingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SerchSetingView.h; sourceTree = "<group>"; };
+		F05D66F822610320009ACD8A /* SerchSetingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SerchSetingView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +124,8 @@
 				F05D66EE225BD78F009ACD8A /* BaseViewController.m */,
 				F05D66F0225BD790009ACD8A /* GGNavigationBar.h */,
 				F05D66F1225BD790009ACD8A /* GGNavigationBar.m */,
+				F05D66F72261031F009ACD8A /* SerchSetingView.h */,
+				F05D66F822610320009ACD8A /* SerchSetingView.m */,
 				F05D66DE2257FACC009ACD8A /* Tools */,
 				F05D66CC2257F38B009ACD8A /* Main.storyboard */,
 				F05D66CF2257F38E009ACD8A /* Assets.xcassets */,
@@ -260,6 +265,7 @@
 			files = (
 				F05D66EB2257FACC009ACD8A /* GGRequest.m in Sources */,
 				F05D66F2225BD790009ACD8A /* BaseViewController.m in Sources */,
+				F05D66F922610320009ACD8A /* SerchSetingView.m in Sources */,
 				F05D66CB2257F38B009ACD8A /* SecondViewController.m in Sources */,
 				F05D66ED2257FACC009ACD8A /* UIViewAdditions.m in Sources */,
 				F05D66C52257F38B009ACD8A /* AppDelegate.m in Sources */,
@@ -414,6 +420,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ImageViewer/PrefixHeader.pch";
 				INFOPLIST_FILE = ImageViewer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -432,6 +439,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ImageViewer/PrefixHeader.pch";
 				INFOPLIST_FILE = ImageViewer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

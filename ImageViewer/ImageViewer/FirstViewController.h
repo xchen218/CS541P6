@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "BaseViewController.h"
+#import "CollectionCell.h"
+#import "SerchSetingView.h"
+
 
 @interface FirstViewController : BaseViewController{
     NSMutableArray *_dataArr;

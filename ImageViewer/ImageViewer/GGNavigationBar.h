@@ -1,10 +1,5 @@
 //
-//  GGNavigationBar.h
-//  MyDota
-//
-//  Created by Xiang on 15/10/15.
-//  Copyright © 2015年 iOGG. All rights reserved.
-//
+
 
 #import <UIKit/UIKit.h>
 typedef NS_ENUM(NSInteger, GGNavigationBarType){

@@ -1,10 +1,4 @@
-//
-//  BaseViewController.m
-//  MyDota
-//
-//  Created by Xiang on 15/8/6.
-//  Copyright (c) 2015年 iGG. All rights reserved.
-//
+
 
 #import "BaseViewController.h"
 #import "MyDefines.h"
@@ -35,7 +29,7 @@
         [self.view addSubview:_tableView];
     }
     _naviBar = [self setUpNaviViewWithType:GGNavigationBarTypeNormal];
-    _naviBar.title = @"EllenGIF";
+    _naviBar.title = @"Image Viewer";
     self.automaticallyAdjustsScrollViewInsets = NO;
 }
 
