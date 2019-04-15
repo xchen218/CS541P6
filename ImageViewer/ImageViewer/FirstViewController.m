@@ -36,7 +36,7 @@
     _field.font = [UIFont systemFontOfSize:12];
     _field.backgroundColor = [UIColor whiteColor];
     _field.textColor = TextDarkColor;
-    _field.text = @"emoji";//[[NSUserDefaults standardUserDefaults]objectForKey:kInitKeyword];
+    _field.text = @"apple";//[[NSUserDefaults standardUserDefaults]objectForKey:kInitKeyword];
     _field.delegate = self;
     
     [_naviBar addSubview:_field];
@@ -58,8 +58,8 @@
     
     
     UIButton *btn = [[UIButton alloc]initWithFrame:CGRectMake(SCREEN_WIDTH-29, 20, 44, 44)];
-    [btn setTitle:@"搜索" forState:UIControlStateNormal];
-    btn.titleLabel.font = [UIFont systemFontOfSize:14];
+    [btn setTitle:@"Search" forState:UIControlStateNormal];
+    btn.titleLabel.font = [UIFont systemFontOfSize:12];
     [btn addTarget:self action:@selector(clickTheBtn:) forControlEvents:UIControlEventTouchUpInside];
     _naviBar.rightView = btn;
     
@@ -81,10 +81,10 @@
     }];
     _dataArr = [NSMutableArray array];
     [self requestData];
-    __weak typeof(self) weakSelf = self;
-    _collectionView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
-        [weakSelf requestData];
-    }];
+//    __weak typeof(self) weakSelf = self;
+//    _collectionView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
+//        [weakSelf requestData];
+//    }];
     
     _tapGesture = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapTheScreen:)];
     [_collectionView addGestureRecognizer:_tapGesture];
@@ -199,11 +199,11 @@
 
 - (void)textFieldDidBeginEditing:(UITextField *)textField{
     _tapGesture.enabled = YES;
-    if (_setView == nil) {
-        _setView = [[SerchSetingView alloc]initWithFrame:CGRectMake(0, 64, SCREEN_WIDTH, 40)];
-        _setView.backgroundColor = [UIColor whiteColor];
-    }
-    [_setView showInView:self.view];
+//    if (_setView == nil) {
+//        _setView = [[SerchSetingView alloc]initWithFrame:CGRectMake(0, 64, SCREEN_WIDTH, 40)];
+//        _setView.backgroundColor = [UIColor whiteColor];
+//    }
+//    [_setView showInView:self.view];
     [self.view bringSubviewToFront:_naviBar];
 }
 
