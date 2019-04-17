@@ -172,7 +172,7 @@
 
 -(void)clickTheBtn:(UIButton*)btn{
     if (!_field.text.length) {
-        [MBProgressHUD showString:@"请输入内容" inView:self.view];
+        [MBProgressHUD showString:@"Please Input Text" inView:self.view];
         return;
     }
     [_dataArr removeAllObjects];
