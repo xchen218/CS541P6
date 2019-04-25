@@ -1,0 +1,560 @@
+commit b87adbb8b6457cbb5c0ac07c5b5cab08a894f349
+Author: xchen218 <xchen218@binghamton.edu>
+Date:   Mon Apr 22 11:08:22 2019 -0400
+
+    finish search api
+
+ .../UserInterfaceState.xcuserstate                  | Bin 38606 -> 38597 bytes
+ ImageViewer/ImageViewer/FirstViewController.m       |   2 +-
+ 2 files changed, 1 insertion(+), 1 deletion(-)
+
+commit 0746d382405f1be34df123dc3bb4654c515b8215
+Author: xchen218 <xchen218@binghamton.edu>
+Date:   Wed Apr 17 11:56:09 2019 -0400
+
+    alert text
+
+ ImageViewer/ImageViewer/FirstViewController.m | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit e6943e63f5b300cfad90537197ed74a341ddc3bd
+Author: xchen218 <xchen218@binghamton.edu>
+Date:   Mon Apr 15 11:26:00 2019 -0400
+
+    change UI
+
+ .../UserInterfaceState.xcuserstate                 | Bin 35115 -> 38606 bytes
+ ImageViewer/ImageViewer/Base.lproj/Main.storyboard |   1 -
+ ImageViewer/ImageViewer/FirstViewController.m      |  24 ++++++++++-----------
+ 3 files changed, 12 insertions(+), 13 deletions(-)
+
+commit c3907d8944886e6420d9d88a5e50b9edba45b9a7
+Author: xchen218 <xchen218@binghamton.edu>
+Date:   Fri Apr 12 14:20:22 2019 -0400
+
+    http accept contents
+
+ ImageViewer/Pods/AFNetworking/AFNetworking/AFURLResponseSerialization.m | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 3ef8ed4a3bfec798391322200701c66cdcd378e0
+Author: xchen218 <xchen218@binghamton.edu>
+Date:   Fri Apr 12 13:54:34 2019 -0400
+
+    adding http request
+
+ ImageViewer/ImageViewer.xcodeproj/project.pbxproj  |   8 +
+ .../UserInterfaceState.xcuserstate                 | Bin 27628 -> 35115 bytes
+ .../ImageViewer/Base.lproj/LaunchScreen.storyboard |  16 +-
+ ImageViewer/ImageViewer/Base.lproj/Main.storyboard |  27 ++-
+ ImageViewer/ImageViewer/BaseViewController.h       |   8 +-
+ ImageViewer/ImageViewer/BaseViewController.m       |  10 +-
+ ImageViewer/ImageViewer/FirstViewController.h      |   3 +
+ ImageViewer/ImageViewer/FirstViewController.m      | 197 ++++++++++++++++++++-
+ ImageViewer/ImageViewer/GGNavigationBar.h          |   7 +-
+ ImageViewer/ImageViewer/GGNavigationBar.m          |   8 +-
+ ImageViewer/ImageViewer/Info.plist                 |   5 +
+ ImageViewer/ImageViewer/SerchSetingView.h          |  14 ++
+ ImageViewer/ImageViewer/SerchSetingView.m          |  64 +++++++
+ 13 files changed, 326 insertions(+), 41 deletions(-)
+
+commit 2b78f5eec4f5f1ea79aeaf44803ebd8fa41b1005
+Author: xchen218 <xchen218@binghamton.edu>
+Date:   Wed Apr 10 11:10:13 2019 -0400
+
+    collectioncell pbxproj
+
+ ImageViewer/ImageViewer.xcodeproj/project.pbxproj | 6 ++++++
+ 1 file changed, 6 insertions(+)
+
+commit e95bd65bd51d5900aa9820787746eebf19099d2f
+Author: xchen218 <xchen218@binghamton.edu>
+Date:   Wed Apr 10 11:09:31 2019 -0400
+
+    collectioncell
+
+ ImageViewer/ImageViewer/CollectionCell.h | 18 ++++++++++++++++
+ ImageViewer/ImageViewer/CollectionCell.m | 37 ++++++++++++++++++++++++++++++++
+ 2 files changed, 55 insertions(+)
+
+commit 335dbe6f38b5be330a09141cfc61982e4c1ec20c
+Author: xchen218 <xchen218@binghamton.edu>
+Date:   Mon Apr 8 15:29:10 2019 -0400
+
+    base view
+
+ ImageViewer/ImageViewer.xcodeproj/project.pbxproj  |  12 ++
+ .../UserInterfaceState.xcuserstate                 | Bin 25583 -> 27628 bytes
+ ImageViewer/ImageViewer/BaseViewController.h       |  36 +++++
+ ImageViewer/ImageViewer/BaseViewController.m       | 145 +++++++++++++++++++++
+ ImageViewer/ImageViewer/FirstViewController.h      |   8 +-
+ ImageViewer/ImageViewer/GGNavigationBar.h          |  26 ++++
+ ImageViewer/ImageViewer/GGNavigationBar.m          |  89 +++++++++++++
+ ImageViewer/ImageViewer/MyDefines.h                |  28 +---
+ 8 files changed, 319 insertions(+), 25 deletions(-)
+
+commit 97d653421c92938eac478c85e834f13a5c9b5ea5
+Author: xchen218 <xchen218@binghamton.edu>
+Date:   Fri Apr 5 17:15:54 2019 -0400
+
+    project initial
+
+ ImageViewer/ImageViewer.xcodeproj/project.pbxproj  |  451 +++
+ .../project.xcworkspace/contents.xcworkspacedata   |    7 +
+ .../xcshareddata/IDEWorkspaceChecks.plist          |    8 +
+ .../UserInterfaceState.xcuserstate                 |  Bin 0 -> 11282 bytes
+ .../xcschemes/xcschememanagement.plist             |   14 +
+ .../contents.xcworkspacedata                       |   10 +
+ .../xcshareddata/IDEWorkspaceChecks.plist          |    8 +
+ .../UserInterfaceState.xcuserstate                 |  Bin 0 -> 25583 bytes
+ ImageViewer/ImageViewer/AppDelegate.h              |   17 +
+ ImageViewer/ImageViewer/AppDelegate.m              |   59 +
+ .../AppIcon.appiconset/Contents.json               |   98 +
+ .../ImageViewer/Assets.xcassets/Contents.json      |    6 +
+ .../Assets.xcassets/first.imageset/Contents.json   |   12 +
+ .../Assets.xcassets/first.imageset/first.pdf       |  Bin 0 -> 2465 bytes
+ .../Assets.xcassets/second.imageset/Contents.json  |   12 +
+ .../Assets.xcassets/second.imageset/second.pdf     |  Bin 0 -> 2423 bytes
+ .../ImageViewer/Base.lproj/LaunchScreen.storyboard |   25 +
+ ImageViewer/ImageViewer/Base.lproj/Main.storyboard |  102 +
+ ImageViewer/ImageViewer/FirstViewController.h      |   15 +
+ ImageViewer/ImageViewer/FirstViewController.m      |   23 +
+ ImageViewer/ImageViewer/Info.plist                 |   55 +
+ ImageViewer/ImageViewer/MyDefines.h                |  143 +
+ ImageViewer/ImageViewer/PrefixHeader.pch           |   33 +
+ ImageViewer/ImageViewer/SecondViewController.h     |   15 +
+ ImageViewer/ImageViewer/SecondViewController.m     |   23 +
+ ImageViewer/ImageViewer/Tools/GGRequest.h          |   24 +
+ ImageViewer/ImageViewer/Tools/GGRequest.m          |   34 +
+ .../ImageViewer/Tools/MBProgressHUD+string.h       |   16 +
+ .../ImageViewer/Tools/MBProgressHUD+string.m       |   28 +
+ ImageViewer/ImageViewer/Tools/Reachability.h       |  109 +
+ ImageViewer/ImageViewer/Tools/Reachability.m       |  527 ++++
+ ImageViewer/ImageViewer/Tools/UIViewAdditions.h    |  100 +
+ ImageViewer/ImageViewer/Tools/UIViewAdditions.m    |  504 ++++
+ ImageViewer/ImageViewer/main.m                     |   16 +
+ ImageViewer/Podfile                                |   11 +
+ ImageViewer/Podfile.lock                           |   62 +
+ .../AFNetworking/AFCompatibilityMacros.h           |   37 +
+ .../AFNetworking/AFHTTPSessionManager.h            |  304 +++
+ .../AFNetworking/AFHTTPSessionManager.m            |  372 +++
+ .../AFNetworking/AFNetworkReachabilityManager.h    |  216 ++
+ .../AFNetworking/AFNetworkReachabilityManager.m    |  266 ++
+ .../Pods/AFNetworking/AFNetworking/AFNetworking.h  |   41 +
+ .../AFNetworking/AFNetworking/AFSecurityPolicy.h   |  154 ++
+ .../AFNetworking/AFNetworking/AFSecurityPolicy.m   |  344 +++
+ .../AFNetworking/AFURLRequestSerialization.h       |  479 ++++
+ .../AFNetworking/AFURLRequestSerialization.m       | 1398 ++++++++++
+ .../AFNetworking/AFURLResponseSerialization.h      |  310 +++
+ .../AFNetworking/AFURLResponseSerialization.m      |  817 ++++++
+ .../AFNetworking/AFURLSessionManager.h             |  501 ++++
+ .../AFNetworking/AFURLSessionManager.m             | 1238 +++++++++
+ ImageViewer/Pods/AFNetworking/LICENSE              |   19 +
+ ImageViewer/Pods/AFNetworking/README.md            |  322 +++
+ .../UIKit+AFNetworking/AFAutoPurgingImageCache.h   |  160 ++
+ .../UIKit+AFNetworking/AFAutoPurgingImageCache.m   |  205 ++
+ .../UIKit+AFNetworking/AFImageDownloader.h         |  171 ++
+ .../UIKit+AFNetworking/AFImageDownloader.m         |  409 +++
+ .../AFNetworkActivityIndicatorManager.h            |  103 +
+ .../AFNetworkActivityIndicatorManager.m            |  259 ++
+ .../UIActivityIndicatorView+AFNetworking.h         |   48 +
+ .../UIActivityIndicatorView+AFNetworking.m         |  114 +
+ .../UIKit+AFNetworking/UIButton+AFNetworking.h     |  175 ++
+ .../UIKit+AFNetworking/UIButton+AFNetworking.m     |  302 ++
+ .../UIKit+AFNetworking/UIImage+AFNetworking.h      |   35 +
+ .../UIKit+AFNetworking/UIImageView+AFNetworking.h  |  109 +
+ .../UIKit+AFNetworking/UIImageView+AFNetworking.m  |  160 ++
+ .../UIKit+AFNetworking/UIKit+AFNetworking.h        |   42 +
+ .../UIProgressView+AFNetworking.h                  |   64 +
+ .../UIProgressView+AFNetworking.m                  |  126 +
+ .../UIRefreshControl+AFNetworking.h                |   53 +
+ .../UIRefreshControl+AFNetworking.m                |  113 +
+ .../UIKit+AFNetworking/UIWebView+AFNetworking.h    |   80 +
+ .../UIKit+AFNetworking/UIWebView+AFNetworking.m    |  157 ++
+ .../Private/AFNetworking/AFAutoPurgingImageCache.h |    1 +
+ .../Private/AFNetworking/AFCompatibilityMacros.h   |    1 +
+ .../Private/AFNetworking/AFHTTPSessionManager.h    |    1 +
+ .../Private/AFNetworking/AFImageDownloader.h       |    1 +
+ .../AFNetworkActivityIndicatorManager.h            |    1 +
+ .../AFNetworking/AFNetworkReachabilityManager.h    |    1 +
+ .../Headers/Private/AFNetworking/AFNetworking.h    |    1 +
+ .../Private/AFNetworking/AFSecurityPolicy.h        |    1 +
+ .../AFNetworking/AFURLRequestSerialization.h       |    1 +
+ .../AFNetworking/AFURLResponseSerialization.h      |    1 +
+ .../Private/AFNetworking/AFURLSessionManager.h     |    1 +
+ .../UIActivityIndicatorView+AFNetworking.h         |    1 +
+ .../Private/AFNetworking/UIButton+AFNetworking.h   |    1 +
+ .../Private/AFNetworking/UIImage+AFNetworking.h    |    1 +
+ .../AFNetworking/UIImageView+AFNetworking.h        |    1 +
+ .../Private/AFNetworking/UIKit+AFNetworking.h      |    1 +
+ .../AFNetworking/UIProgressView+AFNetworking.h     |    1 +
+ .../AFNetworking/UIRefreshControl+AFNetworking.h   |    1 +
+ .../Private/AFNetworking/UIWebView+AFNetworking.h  |    1 +
+ .../Headers/Private/MBProgressHUD/MBProgressHUD.h  |    1 +
+ .../Pods/Headers/Private/MJRefresh/MJRefresh.h     |    1 +
+ .../Private/MJRefresh/MJRefreshAutoFooter.h        |    1 +
+ .../Private/MJRefresh/MJRefreshAutoGifFooter.h     |    1 +
+ .../Private/MJRefresh/MJRefreshAutoNormalFooter.h  |    1 +
+ .../Private/MJRefresh/MJRefreshAutoStateFooter.h   |    1 +
+ .../Private/MJRefresh/MJRefreshBackFooter.h        |    1 +
+ .../Private/MJRefresh/MJRefreshBackGifFooter.h     |    1 +
+ .../Private/MJRefresh/MJRefreshBackNormalFooter.h  |    1 +
+ .../Private/MJRefresh/MJRefreshBackStateFooter.h   |    1 +
+ .../Headers/Private/MJRefresh/MJRefreshComponent.h |    1 +
+ .../Headers/Private/MJRefresh/MJRefreshConst.h     |    1 +
+ .../Headers/Private/MJRefresh/MJRefreshFooter.h    |    1 +
+ .../Headers/Private/MJRefresh/MJRefreshGifHeader.h |    1 +
+ .../Headers/Private/MJRefresh/MJRefreshHeader.h    |    1 +
+ .../Private/MJRefresh/MJRefreshNormalHeader.h      |    1 +
+ .../Private/MJRefresh/MJRefreshStateHeader.h       |    1 +
+ .../Headers/Private/MJRefresh/NSBundle+MJRefresh.h |    1 +
+ .../Private/MJRefresh/UIScrollView+MJExtension.h   |    1 +
+ .../Private/MJRefresh/UIScrollView+MJRefresh.h     |    1 +
+ .../Headers/Private/MJRefresh/UIView+MJExtension.h |    1 +
+ .../Headers/Private/Mantle/MTLEXTKeyPathCoding.h   |    1 +
+ .../Private/Mantle/MTLEXTRuntimeExtensions.h       |    1 +
+ .../Pods/Headers/Private/Mantle/MTLEXTScope.h      |    1 +
+ .../Pods/Headers/Private/Mantle/MTLJSONAdapter.h   |    1 +
+ .../Private/Mantle/MTLManagedObjectAdapter.h       |    1 +
+ .../Headers/Private/Mantle/MTLModel+NSCoding.h     |    1 +
+ ImageViewer/Pods/Headers/Private/Mantle/MTLModel.h |    1 +
+ .../Pods/Headers/Private/Mantle/MTLReflection.h    |    1 +
+ .../Headers/Private/Mantle/MTLValueTransformer.h   |    1 +
+ ImageViewer/Pods/Headers/Private/Mantle/Mantle.h   |    1 +
+ .../Mantle/NSArray+MTLManipulationAdditions.h      |    1 +
+ .../Mantle/NSDictionary+MTLManipulationAdditions.h |    1 +
+ .../Private/Mantle/NSError+MTLModelException.h     |    1 +
+ .../Mantle/NSObject+MTLComparisonAdditions.h       |    1 +
+ .../NSValueTransformer+MTLInversionAdditions.h     |    1 +
+ ...Transformer+MTLPredefinedTransformerAdditions.h |    1 +
+ .../Pods/Headers/Private/Mantle/metamacros.h       |    1 +
+ .../Private/Masonry/MASCompositeConstraint.h       |    1 +
+ .../Private/Masonry/MASConstraint+Private.h        |    1 +
+ .../Pods/Headers/Private/Masonry/MASConstraint.h   |    1 +
+ .../Headers/Private/Masonry/MASConstraintMaker.h   |    1 +
+ .../Headers/Private/Masonry/MASLayoutConstraint.h  |    1 +
+ .../Pods/Headers/Private/Masonry/MASUtilities.h    |    1 +
+ .../Headers/Private/Masonry/MASViewAttribute.h     |    1 +
+ .../Headers/Private/Masonry/MASViewConstraint.h    |    1 +
+ ImageViewer/Pods/Headers/Private/Masonry/Masonry.h |    1 +
+ .../Headers/Private/Masonry/NSArray+MASAdditions.h |    1 +
+ .../Masonry/NSArray+MASShorthandAdditions.h        |    1 +
+ .../Masonry/NSLayoutConstraint+MASDebugAdditions.h |    1 +
+ .../Headers/Private/Masonry/View+MASAdditions.h    |    1 +
+ .../Private/Masonry/View+MASShorthandAdditions.h   |    1 +
+ ImageViewer/Pods/Headers/Private/YYCache/YYCache.h |    1 +
+ .../Pods/Headers/Private/YYCache/YYDiskCache.h     |    1 +
+ .../Pods/Headers/Private/YYCache/YYKVStorage.h     |    1 +
+ .../Pods/Headers/Private/YYCache/YYMemoryCache.h   |    1 +
+ .../Headers/Private/YYImage/YYAnimatedImageView.h  |    1 +
+ .../Pods/Headers/Private/YYImage/YYFrameImage.h    |    1 +
+ ImageViewer/Pods/Headers/Private/YYImage/YYImage.h |    1 +
+ .../Pods/Headers/Private/YYImage/YYImageCoder.h    |    1 +
+ .../Headers/Private/YYImage/YYSpriteSheetImage.h   |    1 +
+ .../Private/YYWebImage/CALayer+YYWebImage.h        |    1 +
+ .../YYWebImage/MKAnnotationView+YYWebImage.h       |    1 +
+ .../Private/YYWebImage/UIButton+YYWebImage.h       |    1 +
+ .../Private/YYWebImage/UIImage+YYWebImage.h        |    1 +
+ .../Private/YYWebImage/UIImageView+YYWebImage.h    |    1 +
+ .../Pods/Headers/Private/YYWebImage/YYImageCache.h |    1 +
+ .../Pods/Headers/Private/YYWebImage/YYWebImage.h   |    1 +
+ .../Headers/Private/YYWebImage/YYWebImageManager.h |    1 +
+ .../Private/YYWebImage/YYWebImageOperation.h       |    1 +
+ .../Headers/Private/YYWebImage/_YYWebImageSetter.h |    1 +
+ .../Public/AFNetworking/AFAutoPurgingImageCache.h  |    1 +
+ .../Public/AFNetworking/AFCompatibilityMacros.h    |    1 +
+ .../Public/AFNetworking/AFHTTPSessionManager.h     |    1 +
+ .../Public/AFNetworking/AFImageDownloader.h        |    1 +
+ .../AFNetworkActivityIndicatorManager.h            |    1 +
+ .../AFNetworking/AFNetworkReachabilityManager.h    |    1 +
+ .../Headers/Public/AFNetworking/AFNetworking.h     |    1 +
+ .../Headers/Public/AFNetworking/AFSecurityPolicy.h |    1 +
+ .../AFNetworking/AFURLRequestSerialization.h       |    1 +
+ .../AFNetworking/AFURLResponseSerialization.h      |    1 +
+ .../Public/AFNetworking/AFURLSessionManager.h      |    1 +
+ .../UIActivityIndicatorView+AFNetworking.h         |    1 +
+ .../Public/AFNetworking/UIButton+AFNetworking.h    |    1 +
+ .../Public/AFNetworking/UIImage+AFNetworking.h     |    1 +
+ .../Public/AFNetworking/UIImageView+AFNetworking.h |    1 +
+ .../Public/AFNetworking/UIKit+AFNetworking.h       |    1 +
+ .../AFNetworking/UIProgressView+AFNetworking.h     |    1 +
+ .../AFNetworking/UIRefreshControl+AFNetworking.h   |    1 +
+ .../Public/AFNetworking/UIWebView+AFNetworking.h   |    1 +
+ .../Headers/Public/MBProgressHUD/MBProgressHUD.h   |    1 +
+ .../Pods/Headers/Public/MJRefresh/MJRefresh.h      |    1 +
+ .../Headers/Public/MJRefresh/MJRefreshAutoFooter.h |    1 +
+ .../Public/MJRefresh/MJRefreshAutoGifFooter.h      |    1 +
+ .../Public/MJRefresh/MJRefreshAutoNormalFooter.h   |    1 +
+ .../Public/MJRefresh/MJRefreshAutoStateFooter.h    |    1 +
+ .../Headers/Public/MJRefresh/MJRefreshBackFooter.h |    1 +
+ .../Public/MJRefresh/MJRefreshBackGifFooter.h      |    1 +
+ .../Public/MJRefresh/MJRefreshBackNormalFooter.h   |    1 +
+ .../Public/MJRefresh/MJRefreshBackStateFooter.h    |    1 +
+ .../Headers/Public/MJRefresh/MJRefreshComponent.h  |    1 +
+ .../Pods/Headers/Public/MJRefresh/MJRefreshConst.h |    1 +
+ .../Headers/Public/MJRefresh/MJRefreshFooter.h     |    1 +
+ .../Headers/Public/MJRefresh/MJRefreshGifHeader.h  |    1 +
+ .../Headers/Public/MJRefresh/MJRefreshHeader.h     |    1 +
+ .../Public/MJRefresh/MJRefreshNormalHeader.h       |    1 +
+ .../Public/MJRefresh/MJRefreshStateHeader.h        |    1 +
+ .../Headers/Public/MJRefresh/NSBundle+MJRefresh.h  |    1 +
+ .../Public/MJRefresh/UIScrollView+MJExtension.h    |    1 +
+ .../Public/MJRefresh/UIScrollView+MJRefresh.h      |    1 +
+ .../Headers/Public/MJRefresh/UIView+MJExtension.h  |    1 +
+ .../Pods/Headers/Public/Mantle/MTLJSONAdapter.h    |    1 +
+ .../Public/Mantle/MTLManagedObjectAdapter.h        |    1 +
+ .../Pods/Headers/Public/Mantle/MTLModel+NSCoding.h |    1 +
+ ImageViewer/Pods/Headers/Public/Mantle/MTLModel.h  |    1 +
+ .../Pods/Headers/Public/Mantle/MTLReflection.h     |    1 +
+ .../Headers/Public/Mantle/MTLValueTransformer.h    |    1 +
+ ImageViewer/Pods/Headers/Public/Mantle/Mantle.h    |    1 +
+ .../Mantle/NSArray+MTLManipulationAdditions.h      |    1 +
+ .../Mantle/NSDictionary+MTLManipulationAdditions.h |    1 +
+ .../Public/Mantle/NSError+MTLModelException.h      |    1 +
+ .../Mantle/NSObject+MTLComparisonAdditions.h       |    1 +
+ .../NSValueTransformer+MTLInversionAdditions.h     |    1 +
+ ...Transformer+MTLPredefinedTransformerAdditions.h |    1 +
+ .../Public/Masonry/MASCompositeConstraint.h        |    1 +
+ .../Headers/Public/Masonry/MASConstraint+Private.h |    1 +
+ .../Pods/Headers/Public/Masonry/MASConstraint.h    |    1 +
+ .../Headers/Public/Masonry/MASConstraintMaker.h    |    1 +
+ .../Headers/Public/Masonry/MASLayoutConstraint.h   |    1 +
+ .../Pods/Headers/Public/Masonry/MASUtilities.h     |    1 +
+ .../Pods/Headers/Public/Masonry/MASViewAttribute.h |    1 +
+ .../Headers/Public/Masonry/MASViewConstraint.h     |    1 +
+ ImageViewer/Pods/Headers/Public/Masonry/Masonry.h  |    1 +
+ .../Headers/Public/Masonry/NSArray+MASAdditions.h  |    1 +
+ .../Public/Masonry/NSArray+MASShorthandAdditions.h |    1 +
+ .../Masonry/NSLayoutConstraint+MASDebugAdditions.h |    1 +
+ .../Headers/Public/Masonry/View+MASAdditions.h     |    1 +
+ .../Public/Masonry/View+MASShorthandAdditions.h    |    1 +
+ ImageViewer/Pods/Headers/Public/YYCache/YYCache.h  |    1 +
+ .../Pods/Headers/Public/YYCache/YYDiskCache.h      |    1 +
+ .../Pods/Headers/Public/YYCache/YYKVStorage.h      |    1 +
+ .../Pods/Headers/Public/YYCache/YYMemoryCache.h    |    1 +
+ .../Headers/Public/YYImage/YYAnimatedImageView.h   |    1 +
+ .../Pods/Headers/Public/YYImage/YYFrameImage.h     |    1 +
+ ImageViewer/Pods/Headers/Public/YYImage/YYImage.h  |    1 +
+ .../Pods/Headers/Public/YYImage/YYImageCoder.h     |    1 +
+ .../Headers/Public/YYImage/YYSpriteSheetImage.h    |    1 +
+ .../Headers/Public/YYWebImage/CALayer+YYWebImage.h |    1 +
+ .../YYWebImage/MKAnnotationView+YYWebImage.h       |    1 +
+ .../Public/YYWebImage/UIButton+YYWebImage.h        |    1 +
+ .../Headers/Public/YYWebImage/UIImage+YYWebImage.h |    1 +
+ .../Public/YYWebImage/UIImageView+YYWebImage.h     |    1 +
+ .../Pods/Headers/Public/YYWebImage/YYImageCache.h  |    1 +
+ .../Pods/Headers/Public/YYWebImage/YYWebImage.h    |    1 +
+ .../Headers/Public/YYWebImage/YYWebImageManager.h  |    1 +
+ .../Public/YYWebImage/YYWebImageOperation.h        |    1 +
+ ImageViewer/Pods/MBProgressHUD/LICENSE             |   19 +
+ ImageViewer/Pods/MBProgressHUD/MBProgressHUD.h     |  443 +++
+ ImageViewer/Pods/MBProgressHUD/MBProgressHUD.m     | 1495 ++++++++++
+ ImageViewer/Pods/MBProgressHUD/README.mdown        |  126 +
+ ImageViewer/Pods/MJRefresh/LICENSE                 |   19 +
+ .../MJRefresh/MJRefresh/Base/MJRefreshAutoFooter.h |   23 +
+ .../MJRefresh/MJRefresh/Base/MJRefreshAutoFooter.m |  154 ++
+ .../MJRefresh/MJRefresh/Base/MJRefreshBackFooter.h |   13 +
+ .../MJRefresh/MJRefresh/Base/MJRefreshBackFooter.m |  146 +
+ .../MJRefresh/MJRefresh/Base/MJRefreshComponent.h  |  107 +
+ .../MJRefresh/MJRefresh/Base/MJRefreshComponent.m  |  276 ++
+ .../MJRefresh/MJRefresh/Base/MJRefreshFooter.h     |   30 +
+ .../MJRefresh/MJRefresh/Base/MJRefreshFooter.m     |   84 +
+ .../MJRefresh/MJRefresh/Base/MJRefreshHeader.h     |   25 +
+ .../MJRefresh/MJRefresh/Base/MJRefreshHeader.m     |  149 +
+ .../Custom/Footer/Auto/MJRefreshAutoGifFooter.h    |   17 +
+ .../Custom/Footer/Auto/MJRefreshAutoGifFooter.m    |  116 +
+ .../Custom/Footer/Auto/MJRefreshAutoNormalFooter.h |   14 +
+ .../Custom/Footer/Auto/MJRefreshAutoNormalFooter.m |   69 +
+ .../Custom/Footer/Auto/MJRefreshAutoStateFooter.h  |   22 +
+ .../Custom/Footer/Auto/MJRefreshAutoStateFooter.m  |   92 +
+ .../Custom/Footer/Back/MJRefreshBackGifFooter.h    |   17 +
+ .../Custom/Footer/Back/MJRefreshBackGifFooter.m    |  127 +
+ .../Custom/Footer/Back/MJRefreshBackNormalFooter.h |   15 +
+ .../Custom/Footer/Back/MJRefreshBackNormalFooter.m |  120 +
+ .../Custom/Footer/Back/MJRefreshBackStateFooter.h  |   21 +
+ .../Custom/Footer/Back/MJRefreshBackStateFooter.m  |   82 +
+ .../MJRefresh/Custom/Header/MJRefreshGifHeader.h   |   17 +
+ .../MJRefresh/Custom/Header/MJRefreshGifHeader.m   |  133 +
+ .../Custom/Header/MJRefreshNormalHeader.h          |   15 +
+ .../Custom/Header/MJRefreshNormalHeader.m          |  127 +
+ .../MJRefresh/Custom/Header/MJRefreshStateHeader.h |   25 +
+ .../MJRefresh/Custom/Header/MJRefreshStateHeader.m |  167 ++
+ .../MJRefresh/MJRefresh.bundle/arrow@2x.png        |  Bin 0 -> 1033 bytes
+ .../MJRefresh.bundle/en.lproj/Localizable.strings  |  Bin 0 -> 1372 bytes
+ .../zh-Hans.lproj/Localizable.strings              |  Bin 0 -> 1194 bytes
+ .../zh-Hant.lproj/Localizable.strings              |   16 +
+ ImageViewer/Pods/MJRefresh/MJRefresh/MJRefresh.h   |   14 +
+ .../Pods/MJRefresh/MJRefresh/MJRefreshConst.h      |   67 +
+ .../Pods/MJRefresh/MJRefresh/MJRefreshConst.m      |   33 +
+ .../Pods/MJRefresh/MJRefresh/NSBundle+MJRefresh.h  |   16 +
+ .../Pods/MJRefresh/MJRefresh/NSBundle+MJRefresh.m  |   61 +
+ .../MJRefresh/MJRefresh/UIScrollView+MJExtension.h |   25 +
+ .../MJRefresh/MJRefresh/UIScrollView+MJExtension.m |  151 +
+ .../MJRefresh/MJRefresh/UIScrollView+MJRefresh.h   |   26 +
+ .../MJRefresh/MJRefresh/UIScrollView+MJRefresh.m   |  163 ++
+ .../Pods/MJRefresh/MJRefresh/UIView+MJExtension.h  |   19 +
+ .../Pods/MJRefresh/MJRefresh/UIView+MJExtension.m  |   84 +
+ ImageViewer/Pods/MJRefresh/README.md               |  362 +++
+ ImageViewer/Pods/Manifest.lock                     |   62 +
+ ImageViewer/Pods/Mantle/LICENSE.md                 |   21 +
+ ImageViewer/Pods/Mantle/Mantle/MTLJSONAdapter.h    |  172 ++
+ ImageViewer/Pods/Mantle/Mantle/MTLJSONAdapter.m    |  321 +++
+ .../Pods/Mantle/Mantle/MTLManagedObjectAdapter.h   |  215 ++
+ .../Pods/Mantle/Mantle/MTLManagedObjectAdapter.m   |  641 +++++
+ ImageViewer/Pods/Mantle/Mantle/MTLModel+NSCoding.h |  128 +
+ ImageViewer/Pods/Mantle/Mantle/MTLModel+NSCoding.m |  262 ++
+ ImageViewer/Pods/Mantle/Mantle/MTLModel.h          |  125 +
+ ImageViewer/Pods/Mantle/Mantle/MTLModel.m          |  242 ++
+ ImageViewer/Pods/Mantle/Mantle/MTLReflection.h     |   31 +
+ ImageViewer/Pods/Mantle/Mantle/MTLReflection.m     |   50 +
+ .../Pods/Mantle/Mantle/MTLValueTransformer.h       |   29 +
+ .../Pods/Mantle/Mantle/MTLValueTransformer.m       |   88 +
+ ImageViewer/Pods/Mantle/Mantle/Mantle.h            |   26 +
+ .../Mantle/NSArray+MTLManipulationAdditions.h      |   28 +
+ .../Mantle/NSArray+MTLManipulationAdditions.m      |   42 +
+ .../Mantle/NSDictionary+MTLManipulationAdditions.h |   25 +
+ .../Mantle/NSDictionary+MTLManipulationAdditions.m |   25 +
+ .../Pods/Mantle/Mantle/NSError+MTLModelException.h |   23 +
+ .../Pods/Mantle/Mantle/NSError+MTLModelException.m |   36 +
+ .../Mantle/NSObject+MTLComparisonAdditions.h       |   15 +
+ .../Mantle/NSObject+MTLComparisonAdditions.m       |   16 +
+ .../NSValueTransformer+MTLInversionAdditions.h     |   21 +
+ .../NSValueTransformer+MTLInversionAdditions.m     |   24 +
+ ...Transformer+MTLPredefinedTransformerAdditions.h |   84 +
+ ...Transformer+MTLPredefinedTransformerAdditions.m |  141 +
+ .../Mantle/Mantle/extobjc/MTLEXTKeyPathCoding.h    |   68 +
+ .../Mantle/extobjc/MTLEXTRuntimeExtensions.h       |  113 +
+ .../Mantle/extobjc/MTLEXTRuntimeExtensions.m       |  211 ++
+ .../Pods/Mantle/Mantle/extobjc/MTLEXTScope.h       |   99 +
+ .../Pods/Mantle/Mantle/extobjc/MTLEXTScope.m       |   15 +
+ .../Pods/Mantle/Mantle/extobjc/metamacros.h        |  666 +++++
+ ImageViewer/Pods/Mantle/README.md                  |  507 ++++
+ ImageViewer/Pods/Masonry/LICENSE                   |   19 +
+ .../Pods/Masonry/Masonry/MASCompositeConstraint.h  |   26 +
+ .../Pods/Masonry/Masonry/MASCompositeConstraint.m  |  177 ++
+ .../Pods/Masonry/Masonry/MASConstraint+Private.h   |   66 +
+ ImageViewer/Pods/Masonry/Masonry/MASConstraint.h   |  237 ++
+ ImageViewer/Pods/Masonry/Masonry/MASConstraint.m   |  245 ++
+ .../Pods/Masonry/Masonry/MASConstraintMaker.h      |  105 +
+ .../Pods/Masonry/Masonry/MASConstraintMaker.m      |  193 ++
+ .../Pods/Masonry/Masonry/MASLayoutConstraint.h     |   22 +
+ .../Pods/Masonry/Masonry/MASLayoutConstraint.m     |   13 +
+ ImageViewer/Pods/Masonry/Masonry/MASUtilities.h    |  131 +
+ .../Pods/Masonry/Masonry/MASViewAttribute.h        |   39 +
+ .../Pods/Masonry/Masonry/MASViewAttribute.m        |   40 +
+ .../Pods/Masonry/Masonry/MASViewConstraint.h       |   48 +
+ .../Pods/Masonry/Masonry/MASViewConstraint.m       |  395 +++
+ ImageViewer/Pods/Masonry/Masonry/Masonry.h         |   20 +
+ .../Pods/Masonry/Masonry/NSArray+MASAdditions.h    |   47 +
+ .../Pods/Masonry/Masonry/NSArray+MASAdditions.m    |   41 +
+ .../Masonry/NSArray+MASShorthandAdditions.h        |   41 +
+ .../Masonry/NSLayoutConstraint+MASDebugAdditions.h |   16 +
+ .../Masonry/NSLayoutConstraint+MASDebugAdditions.m |  129 +
+ .../Pods/Masonry/Masonry/View+MASAdditions.h       |   81 +
+ .../Pods/Masonry/Masonry/View+MASAdditions.m       |  119 +
+ .../Masonry/Masonry/View+MASShorthandAdditions.h   |   75 +
+ ImageViewer/Pods/Masonry/README.md                 |  363 +++
+ ImageViewer/Pods/Pods.xcodeproj/project.pbxproj    | 2284 ++++++++++++++++
+ .../xcschemes/AFNetworking.xcscheme                |   60 +
+ .../xcschemes/MBProgressHUD.xcscheme               |   60 +
+ .../xiang.xcuserdatad/xcschemes/MJRefresh.xcscheme |   60 +
+ .../xiang.xcuserdatad/xcschemes/Mantle.xcscheme    |   60 +
+ .../xiang.xcuserdatad/xcschemes/Masonry.xcscheme   |   60 +
+ .../xcschemes/Pods-ImageViewer.xcscheme            |   60 +
+ .../xiang.xcuserdatad/xcschemes/YYCache.xcscheme   |   60 +
+ .../xiang.xcuserdatad/xcschemes/YYImage.xcscheme   |   60 +
+ .../xcschemes/YYWebImage.xcscheme                  |   60 +
+ .../xcschemes/xcschememanagement.plist             |   74 +
+ .../AFNetworking/AFNetworking-dummy.m              |    5 +
+ .../AFNetworking/AFNetworking-prefix.pch           |   23 +
+ .../AFNetworking/AFNetworking.xcconfig             |   10 +
+ .../MBProgressHUD/MBProgressHUD-dummy.m            |    5 +
+ .../MBProgressHUD/MBProgressHUD-prefix.pch         |   12 +
+ .../MBProgressHUD/MBProgressHUD.xcconfig           |   10 +
+ .../MJRefresh/MJRefresh-dummy.m                    |    5 +
+ .../MJRefresh/MJRefresh-prefix.pch                 |   12 +
+ .../MJRefresh/MJRefresh.xcconfig                   |    9 +
+ .../Target Support Files/Mantle/Mantle-dummy.m     |    5 +
+ .../Target Support Files/Mantle/Mantle-prefix.pch  |   12 +
+ .../Target Support Files/Mantle/Mantle.xcconfig    |   10 +
+ .../Target Support Files/Masonry/Masonry-dummy.m   |    5 +
+ .../Masonry/Masonry-prefix.pch                     |   12 +
+ .../Target Support Files/Masonry/Masonry.xcconfig  |   10 +
+ .../Pods-ImageViewer-acknowledgements.markdown     |  196 ++
+ .../Pods-ImageViewer-acknowledgements.plist        |  270 ++
+ .../Pods-ImageViewer/Pods-ImageViewer-dummy.m      |    5 +
+ .../Pods-ImageViewer-frameworks.sh                 |  146 +
+ .../Pods-ImageViewer/Pods-ImageViewer-resources.sh |  124 +
+ .../Pods-ImageViewer.debug.xcconfig                |    9 +
+ .../Pods-ImageViewer.release.xcconfig              |    9 +
+ .../Target Support Files/YYCache/YYCache-dummy.m   |    5 +
+ .../YYCache/YYCache-prefix.pch                     |   12 +
+ .../Target Support Files/YYCache/YYCache.xcconfig  |   10 +
+ .../Target Support Files/YYImage/YYImage-dummy.m   |    5 +
+ .../YYImage/YYImage-prefix.pch                     |   12 +
+ .../Target Support Files/YYImage/YYImage.xcconfig  |   10 +
+ .../YYWebImage/YYWebImage-dummy.m                  |    5 +
+ .../YYWebImage/YYWebImage-prefix.pch               |   12 +
+ .../YYWebImage/YYWebImage.xcconfig                 |   11 +
+ ImageViewer/Pods/YYCache/LICENSE                   |   22 +
+ ImageViewer/Pods/YYCache/README.md                 |  171 ++
+ ImageViewer/Pods/YYCache/YYCache/YYCache.h         |  206 ++
+ ImageViewer/Pods/YYCache/YYCache/YYCache.m         |  139 +
+ ImageViewer/Pods/YYCache/YYCache/YYDiskCache.h     |  412 +++
+ ImageViewer/Pods/YYCache/YYCache/YYDiskCache.m     |  458 ++++
+ ImageViewer/Pods/YYCache/YYCache/YYKVStorage.h     |  325 +++
+ ImageViewer/Pods/YYCache/YYCache/YYKVStorage.m     | 1069 ++++++++
+ ImageViewer/Pods/YYCache/YYCache/YYMemoryCache.h   |  213 ++
+ ImageViewer/Pods/YYCache/YYCache/YYMemoryCache.m   |  505 ++++
+ ImageViewer/Pods/YYImage/LICENSE                   |   22 +
+ ImageViewer/Pods/YYImage/README.md                 |  384 +++
+ .../Pods/YYImage/YYImage/YYAnimatedImageView.h     |  125 +
+ .../Pods/YYImage/YYImage/YYAnimatedImageView.m     |  672 +++++
+ ImageViewer/Pods/YYImage/YYImage/YYFrameImage.h    |  109 +
+ ImageViewer/Pods/YYImage/YYImage/YYFrameImage.m    |  150 +
+ ImageViewer/Pods/YYImage/YYImage/YYImage.h         |   92 +
+ ImageViewer/Pods/YYImage/YYImage/YYImage.m         |  254 ++
+ ImageViewer/Pods/YYImage/YYImage/YYImageCoder.h    |  505 ++++
+ ImageViewer/Pods/YYImage/YYImage/YYImageCoder.m    | 2870 ++++++++++++++++++++
+ .../Pods/YYImage/YYImage/YYSpriteSheetImage.h      |  104 +
+ .../Pods/YYImage/YYImage/YYSpriteSheetImage.m      |   80 +
+ ImageViewer/Pods/YYWebImage/LICENSE                |   22 +
+ ImageViewer/Pods/YYWebImage/README.md              |  308 +++
+ .../YYWebImage/Categories/CALayer+YYWebImage.h     |  112 +
+ .../YYWebImage/Categories/CALayer+YYWebImage.m     |  189 ++
+ .../Categories/MKAnnotationView+YYWebImage.h       |  109 +
+ .../Categories/MKAnnotationView+YYWebImage.m       |  187 ++
+ .../YYWebImage/Categories/UIButton+YYWebImage.h    |  213 ++
+ .../YYWebImage/Categories/UIButton+YYWebImage.m    |  439 +++
+ .../YYWebImage/Categories/UIImage+YYWebImage.h     |  316 +++
+ .../YYWebImage/Categories/UIImage+YYWebImage.m     |  745 +++++
+ .../YYWebImage/Categories/UIImageView+YYWebImage.h |  193 ++
+ .../YYWebImage/Categories/UIImageView+YYWebImage.m |  355 +++
+ .../YYWebImage/Categories/_YYWebImageSetter.h      |   67 +
+ .../YYWebImage/Categories/_YYWebImageSetter.m      |  103 +
+ .../Pods/YYWebImage/YYWebImage/YYImageCache.h      |  228 ++
+ .../Pods/YYWebImage/YYWebImage/YYImageCache.m      |  253 ++
+ .../Pods/YYWebImage/YYWebImage/YYWebImage.h        |   65 +
+ .../Pods/YYWebImage/YYWebImage/YYWebImageManager.h |  312 +++
+ .../Pods/YYWebImage/YYWebImage/YYWebImageManager.m |  184 ++
+ .../YYWebImage/YYWebImage/YYWebImageOperation.h    |   97 +
+ .../YYWebImage/YYWebImage/YYWebImageOperation.m    |  868 ++++++
+ 440 files changed, 43183 insertions(+)
+
+commit 488a20850bacb5b3930b0607b3a042424b07e4d4
+Author: xchen218 <31324612+xchen218@users.noreply.github.com>
+Date:   Fri Apr 5 13:04:14 2019 -0400
+
+    Update README.md
+
+ README.md | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 031c2f21a033f1ca2f845446b52488f31d976adf
+Author: xchen218 <31324612+xchen218@users.noreply.github.com>
+Date:   Fri Apr 5 13:02:44 2019 -0400
+
+    Initial commit
+
+ README.md | 2 ++
+ 1 file changed, 2 insertions(+)
